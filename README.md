@@ -47,7 +47,8 @@ Les pull requests sont les bienvenues. Pour les changements majeurs, ouvrez une 
 
 - SASS (CSS)
 - JSON
-- HTML JS  
+- HTML
+- JS  
 
 
 
