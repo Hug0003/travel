@@ -31,7 +31,9 @@ git clone https://github.com/utilisateur/projet.git
 # Installez les dépendances
 npm install (optionnelle)
 # Lancez le projet
-lancer live server depuis la page index.html
+1. npm run build:css (pour toutes modifications) 
+2. npm start
+   Si ça ne fonctionne pas : utiliser le live server
 
 ## 📚 Usage
 Explorez le site et de sa DA, tout en profitant des petits effets d'animations visuelles 
