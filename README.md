@@ -13,63 +13,41 @@ C'est un site static d'une agence de voyage spécialisé dans la nature. Dans le
 
 ## ✨ Fonctionnalités
 
-- [x] Fonctionnalité 1  
-- [x] Fonctionnalité 2  
-- [ ] Fonctionnalité à venir  
+- [x] superposition des images et au survole d'une images elle passe en première place   
+- [x] cartes de rotation, au survole d'une des cartes elle tourne sur elle même avec un effet de profondeur
+- [x] formulaire d'inscription, avec des boutons radio personnalisés
+- [x] video en arrrière plan
+- [x] testimonials
 
 
 ## 🚀 Installation
-
 ### Prérequis
-- Liste des dépendances (Node.js, Python, etc.)
-- Instructions pour les installer.
+- installer nodejs
+- puis juste : "npm install" ( ça va installer toutes les dépendances nécessaires ) si l'installation ne fonctionne pas ce n'est pas grave vous pouvez toujours lancer le projet avec live server
 
 ### Étapes d'installation
-
 # Clonez le projet
 git clone https://github.com/utilisateur/projet.git
-
-# Accédez au répertoire
-cd projet
-
 # Installez les dépendances
-npm install  # ou pip install -r requirements.txt
-
+npm install (optionnelle)
 # Lancez le projet
-npm start  # ou python app.py
-
+lancer live server depuis la page index.html
 
 ## 📚 Usage
-
-Expliquez comment utiliser le projet après installation.  
-Inclure des exemples de commandes ou captures d’écran.
-
-
+Explorez le site et de sa DA, tout en profitant des petits effets d'animations visuelles 
+(ux/ui) de ce site 
 
 ## 👥 Contributeurs
-
 - moi : - moi : [@monprofil](https://github.com/Hug0003)  
 
 ### Contribuer
 Les pull requests sont les bienvenues. Pour les changements majeurs, ouvrez une issue d'abord pour discuter de ce que vous souhaitez changer.  
 
-
-
-## ✅ Tests
-
-Instructions pour lancer les tests si le projet en contient :  
-
-
-# Lancer les tests
-npm test  # ou pytest
-
-
-
 ## 🛠️ Technologies Utilisées
 
-- Technologie 1  
-- Technologie 2  
-- Technologie 3  
+- SASS (CSS)
+- JSON
+- HTML JS  
 
 
 
@@ -79,3 +57,4 @@ Pour toute question, contactez-moi :
 - GitHub : [@monprofil](https://github.com/Hug0003)  
 - E-mail : hugomeuriel@gmail.com
 
+[@monprofil](https://github.com/Hug0003)  / 2024
