@@ -27,7 +27,7 @@ C'est un site static d'une agence de voyage spécialisé dans la nature. Dans le
 
 ### Étapes d'installation
 # Clonez le projet
-git clone https://github.com/utilisateur/projet.git
+git clone https://github.com/Hug0003/travel.git
 # Installez les dépendances
 npm install (optionnelle)
 # Lancez le projet
