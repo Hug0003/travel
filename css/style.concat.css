@@ -1484,57 +1484,104 @@ body {
   display: none;
 }
 
-.responsive-unavailable {
+.not-available {
   display: none;
 }
 @media only screen and (max-width: 59.375em) {
-  .responsive-unavailable {
+  .not-available {
     display: block;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(24, 105, 16, 0.8), rgba(8, 70, 64, 0.8)), url(../img/hero.webp);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+  .not-available::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+  }
+  .not-available .not-available__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  .not-available .header__logo--box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 2;
   }
 }
-.responsive-unavailable .header--unavailable {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-.responsive-unavailable .header--unavailable .header__logo--box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  animation: none;
-}
-@media only screen and (max-width: 37.5em) {
-  .responsive-unavailable .header--unavailable .header__logo--box {
+@media only screen and (max-width: 59.375em) and (max-width: 37.5em) {
+  .not-available .header__logo--box {
     top: 2rem;
     left: 2rem;
   }
 }
-.responsive-unavailable .header--unavailable .header__text--box {
-  position: relative;
-  top: auto;
-  left: auto;
-  transform: none;
-  max-width: 90%;
-  margin: 0 auto;
+@media only screen and (max-width: 59.375em) {
+  .not-available .header__logo--box .header__logo {
+    height: 3rem;
+  }
+  .not-available h1 {
+    font-family: inherit;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 1rem;
+  }
 }
-.responsive-unavailable .header--unavailable .header__text--box .heading-primary--message {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-top: 3rem;
-  line-height: 1.6;
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (max-width: 59.375em) and (max-width: 37.5em) {
+  .not-available h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
 }
-@media only screen and (max-width: 37.5em) {
-  .responsive-unavailable .header--unavailable .header__text--box .heading-primary--message {
+@media only screen and (max-width: 59.375em) and (max-width: 25em) {
+  .not-available h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+}
+@media only screen and (max-width: 59.375em) {
+  .not-available p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 59.375em) and (max-width: 37.5em) {
+  .not-available p {
     font-size: 1.6rem;
-    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 59.375em) and (max-width: 25em) {
+  .not-available p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 59.375em) {
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }
 
