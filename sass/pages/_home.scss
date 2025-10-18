@@ -18,7 +18,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(../img/nat-4.jpg);
+    url(../img/nat-4.webp);
   background-size: cover;
   background-position: top;
 
@@ -60,14 +60,35 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url("../img/nat-10.jpg");
+    url("../img/nat-10.webp");
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   height: 50rem;
 
+  @include respond(tab-por) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url("../img/nat-10.webp");
+    background-size: cover;
+    height: auto;
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-por) {
+      width: 100%;
+      padding: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 3rem;
+    }
   }
 }

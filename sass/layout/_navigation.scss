@@ -61,6 +61,10 @@
 
   &__item {
     margin: 1rem;
+
+    @include respond(phone) {
+      margin: 0.8rem;
+    }
   }
 
   &__link {
@@ -81,6 +85,11 @@
       background-size: 250%;
       transition: all 0.4s;
       display: inline-block;
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+        padding: 0.8rem 1.5rem;
+      }
     }
 
     &:hover,
